@@ -1,3 +1,14 @@
+/**
+ * mario.c
+ *
+ * Computer Science 50x2015
+ * Problem Set 1
+ * Alessio Occhipinti 
+ * github.com/LasaleFamine
+ *
+ * Mario pyramid.
+ */
+
 #include <cs50.h>
 #include <stdio.h>
 

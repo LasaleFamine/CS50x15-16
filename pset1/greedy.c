@@ -1,3 +1,14 @@
+/**
+ * greedy.c
+ *
+ * Computer Science 50x2015
+ * Problem Set 1
+ * Alessio Occhipinti 
+ * github.com/LasaleFamine
+ *
+ * Greedy count.
+ */
+
 #include <cs50.h>
 #include <math.h>
 #include <stdio.h>
