@@ -1,0 +1,90 @@
+/**
+ * questions
+ *
+ * Computer Science 50x15
+ * Problem Set 4
+ * Alessio Occhipinti
+ * github.com/LasaleFamine
+ *
+ * Reveal Mr Buddy image
+ * Usage: ./whodunit infile outfile
+ *
+ */
+       
+0.  
+    BMP: 32 bit, over 4 billion colors;
+    GIF: 8 bit, 256 colors;
+    JPG: 24 bit, 16 million colors;
+    PNG: over 16 million colors (with 24-bit color).
+    
+1.  
+    only GIF.
+    
+2.  
+    "Lossy" means that can be compressed with the consequence of losing quality. 
+    "Lossless" files, like PNG's, retaining color information when they are compressed.
+
+3.  
+    JPG is lossy-compressed
+    
+4.  
+    In FAT (File Allocation Table) file system two things specificaly:
+    First: the system changes the file's name first character in the file's directory entry to signal the deleting of the file.
+    Second: the system moves all the file's FAT clusters to the hard drive's list of free cluster.
+    The actual data is never touched.
+    
+5. 
+    You can ensure the deleting in three ways:
+    1) Destroy physically the drive;
+    2) Make it unusable;
+    3) Overwrite all the datas, so that can't be recovered.
+
+6.  
+    stdinit.h header contains new types of integer that are not include in C99 standard.
+    These new types are useful especially in embedded enviroments.
+
+7.  
+    It's good to make clear that we want to use the data in that specific way.
+    unit16_t means an integer that is 16 bits wide
+    
+8.  
+    BYTE is 1 byte
+	DWORD is 4 bytes
+	LONG is 4 bytes
+	WORD is 2 bytes
+
+9.  
+    The first two bytes of BMP is a WORD and denotes the bfType, which is the specification of the file's type.
+    To indicate BMP file it must be set to signature word BM (0x4D42).
+    
+10. 
+    bfSize: the size, in bytes, of the BMP file.
+    biSize: the size of the structure, in bytes.
+    
+11.     
+	If biHeight is negative, the bitmap is a top-down DIB (device-independent bitmap)
+	and its origin is the upper left corner.
+	
+12. 
+    Is the biBitCount that determines the number of bits tha define each pixel and the maximum number of colors in the bitmap.
+    
+13. 
+    fopen in copy.c:37 will return NULL or if "copy" program doesn't have permissions to write a new file or
+    if you don't specify the file new file name when you run the program.
+    
+14. 
+    Because the program is reading in 1 RGB triple at a time.
+    
+15. 
+    The padding would be 3, because 3 pixels * 3 bytes per pixel * 3 padding = 12,
+    which is a multiple of 4.
+    
+16. 
+    Literally: sets the position indicator associated with the stream to a new position.
+    
+17. 
+    Is an integer constant which, when used as the whence argument to the fseek or fseeko function,
+	specifies that the offset provided is relative to the current file position.
+	
+18. 
+    So Mr Buddy is a blue-dot guy (I presume from CS50) with a cat on his hands :D.
