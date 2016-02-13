@@ -1,0 +1,40 @@
+/**
+ * questions
+ *
+ * Computer Science 50x16
+ * Problem Set 5
+ * Alessio Occhipinti
+ * github.com/LasaleFamine
+ *
+ */
+
+ 0.  
+    Is the longest word in English that refers to a lung disease that is known as silicosis.
+1.  
+    getrusage() returns the resource usage of the calling process (RUSAGE_SELF), of the children of the calling process (RUSAGE_CHILDREN) or of the calling thread (RUSAGE_THREAD).
+2.  
+    Rusage contains 16 data types.
+3.  
+    The getrusage function prototype expects a pointer. By the way working with pointer is more efficient.
+4.  
+    First open and check that the file has opened, then the for loop iterates until the EOF, or end of file, marker is reached. 
+    The first loop iterates the file and check for every single character of each single word.
+    Each character that is contained in a variable, is checked to ensure it is a letter or an apostrophe, as long as the apostrophe does not appear at the beginning of the word. 
+    If the character is a letter, it will be inserted into the WORD array at the INDEX position. After this happens INDEX is incremented to go to the next position in the array.
+    If the size of INDEX exceeds the maximum permitted size of a word, as defined by LENGTH, the program start with the next word by resetting index to 0. The same thing is done if a number is found. 
+    While being timed, the word is checked for misspellings. If it is not found in the dictionary, the word is printed out and the total number of misspellings caught is increased by 1.    
+    
+5.  
+    fscanf ignores whitespace, so if we use only fscanf we can't check easly the end of a single word.
+6.  
+    These pointers (to constant characters) cannot change the values that they are pointing to. This is useful for load and check functions whose job is not to change the elements in the WORD array, but only to read them.
+
+7.  I used a trie. I every child node, I have a boolean value to indicate if a word was found or not by that children node.
+    By the way, the children node contains 27 other "buckets" that store the addresses or the letters thar are present and will contain NULL if no letters are present.
+    
+8.  
+    Not so slower than now.
+9.  
+    I have tested some changes to my code but I didn't really see big changes. Like fix some for loop declaring the index inside the for parentesis, but nothing more.
+10. 
+    Of course there are simpler ways to implement load and unload, but I was not able to find a way to make it implement perfectly and also I didn't have too much time to spend on it, unfortunately.
