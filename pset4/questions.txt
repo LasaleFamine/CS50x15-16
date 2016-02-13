@@ -6,9 +6,6 @@
  * Alessio Occhipinti
  * github.com/LasaleFamine
  *
- * Reveal Mr Buddy image
- * Usage: ./whodunit infile outfile
- *
  */
        
 0.  
