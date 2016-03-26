@@ -1,4 +1,5 @@
-# CS50x15-16 Introduction to Computer Science
+# CS50x15-16 
+## Introduction to Computer Science
 
 ![alt tag](http://media.news.harvard.edu/gazette/wp-content/uploads/2013/02/harvadx_smaller_logo_mail.gif)
 
