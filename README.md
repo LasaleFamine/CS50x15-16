@@ -1,7 +1,8 @@
 # CS50x15-16 
 ## Introduction to Computer Science
 
-![alt tag](http://media.news.harvard.edu/gazette/wp-content/uploads/2013/02/harvadx_smaller_logo_mail.gif)
+![CS50x](http://media.news.harvard.edu/gazette/wp-content/uploads/2013/02/harvadx_smaller_logo_mail.gif)
+![EdX](https://www.edx.org/sites/default/files/theme/edx-logo-header.png)
 
 ##Hello World! 
 This is my collection of psets of CS50 from the end of 2015 to february 2016.
